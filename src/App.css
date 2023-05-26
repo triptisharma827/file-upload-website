@@ -1,38 +1,83 @@
-.App {
+body{
+  background: #393646;
+background: linear-gradient(13deg,#393646 0%, #4c3575 90%);
+background: -webkit-linear-gradient(13deg,#393646 0%, #4c3575 90%);
+background: -moz-linear-gradient(13deg,#393646 0%, #4c3575 90%);
+}
+
+.upload-header{
   text-align: center;
+  font-size: 1.5rem;
+  color: #E2DBDB;
+  /* margin: 5% auto; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.upload-body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+}
+.imag{
+  margin-left: 2%;
+}
+.upload-container{
+  text-align: center;
+  background-color: #E9D5DA;
+  width: 50%;
+  /* height: 50%; */
+  padding: auto auto;
+  border-radius: 10px;
+  border: 1px solid #4F4557;
+  box-shadow: 0px 0px 10px 0px rgba(226, 219, 219, 0.3);
+  margin: 8% auto;
+  /* margin-top: 5%; */
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.upload-container{
+  height: 40%;
+  padding-top: 3%;
+  padding-bottom: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sub-heading{
+  font-size: 1.7rem;
+  color: #4F4557;
+  margin-bottom: 5%;
+}
+.buttonClass {
+  font-size:15px;
+  font-family:Arial;
+  width:140px;
+  height:50px;
+  border-width:1px;
+  color:#fff;
+  border-color:#c584f3;
+  font-weight:bold;
+  margin-top: 5%;
+  border-top-left-radius:16px;
+  border-top-right-radius:16px;
+  border-bottom-left-radius:16px;
+  border-bottom-right-radius:16px;
+  box-shadow:inset 0px 1px 0px 0px #efdcfb;
+  text-shadow:inset 0px 1px 0px rgba(78, 47, 102, 1);
+  background:linear-gradient(#dfbdfa, #bc80ea);
+}
+
+.buttonClass:hover {
+  background: linear-gradient(#bc80ea, #dfbdfa);
+}
+
+
+.file-select{ 
+  color: rgb(117, 115, 115);
+  padding: 2%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+.upload-status{
+  margin-top: 5%;
+  font-size: 1.2rem;
+  color: #393646;
+  font-weight: 800;
 }
